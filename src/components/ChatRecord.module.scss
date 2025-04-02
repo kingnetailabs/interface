@@ -1,0 +1,134 @@
+@use "@/vars" as *;
+
+.chat-content {
+  padding: 10px;
+
+  // :global {
+  .item {
+    margin-bottom: 16px;
+    display: flex;
+    // width: 100%;
+
+    @keyframes circle {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    
+    .loading {
+      position: relative;
+      width: 30px;
+      height: 30px;
+      border: 2px solid #fff;
+      border-top-color: rgba(0, 0, 0, 0.2);
+      border-right-color: rgba(0, 0, 0, 0.2);
+      border-bottom-color: rgba(0, 0, 0, 0.2);
+      border-radius: 100%;
+      animation: circle infinite 0.75s linear;
+    }
+
+    .bubble {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      max-width: 800px;
+      padding: 14px 18px;
+      border-radius: 8px;
+      position: relative;
+      color: #000;
+      word-wrap: break-word;
+      word-break: normal;
+      font-size: 14px;
+      color: #000000;
+      line-height: 24px;
+      transition: 2s;
+      span {
+        width: fit-content;
+      }
+      .voice {
+        width: 19px;
+        height: 19px;
+        cursor: pointer;
+        :deep(.ant-image) {
+          img {
+            vertical-align: baseline;
+          }
+        }
+      }
+    }
+    .item-center {
+      justify-content: center;
+      span {
+        font-size: 12px;
+        padding: 2px 4px;
+        color: #fff;
+        background-color: #dadada;
+        border-radius: 3px;
+        -moz-user-select: none; /*火狐*/
+        -webkit-user-select: none; /*webkit浏览器*/
+        -ms-user-select: none; /*IE10*/
+        -khtml-user-select: none; /*早期浏览器*/
+        user-select: none;
+      }
+    }
+    .avatar {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      overflow: hidden;
+      object-fit: cover;
+    }
+  }
+
+  .item:last-child {
+    margin-bottom: 0px;
+  }
+
+  .item-left {
+    .bubble {
+      color: #fff;
+      margin-left: 15px;
+      background-color: rgba(79, 198, 232, 0.2);
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-top: 10px solid transparent;
+        border-right: 10px solid rgba(79, 198, 232, 0.2);
+        border-bottom: 10px solid transparent;
+        left: -20px;
+        top: 10px;
+      }
+    }
+  }
+
+  .item-right {
+    justify-content: flex-end;
+
+    .bubble {
+      color: #fff;
+      margin-right: 15px;
+      background-color: rgba(79, 198, 232, 0.2);
+      &:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 10px solid rgba(79, 198, 232, 0.2);
+        border-top: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        right: -20px;
+        top: 10px;
+      }
+    }
+  }
+}
+// }

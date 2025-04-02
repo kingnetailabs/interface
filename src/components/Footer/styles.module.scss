@@ -1,0 +1,63 @@
+@use "@/vars" as *;
+
+.wrap {
+  padding: 100px 0 30px;
+  border-top: 1px solid #192939;
+  background: #141220;
+  background: linear-gradient(180deg, #800a91 0%, #081939 100%);
+  .main {
+    width: 80%;
+    margin: 0 auto 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    .l {
+      margin-top: 20px;
+      .logo {
+        width: 250px;
+        margin-bottom: 25px;
+      }
+      .desc {
+        display: flex;
+        align-items: center;
+        img {
+          margin-right: 8px;
+        }
+      }
+      .relation {
+        margin-top: 28px;
+        display: flex;
+        width: 30px;
+
+        img {
+          margin-right: 20px;
+          cursor: pointer;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+    .r {
+      margin-top: 20px;
+      display: flex;
+      .item {
+        margin-right: 60px;
+      }
+      .title {
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+        margin-bottom: 20px;
+      }
+      .p {
+        margin-bottom: 8px;
+        cursor: pointer;
+      }
+    }
+  }
+  .copyright {
+    text-align: center;
+  }
+}

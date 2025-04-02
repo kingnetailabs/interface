@@ -1,0 +1,28 @@
+.tab {
+  margin-bottom: 25px;
+  border-bottom: 3px solid #452946;
+//   width: 100%;
+  display: flex;
+  // border: 1px solid red;
+
+  span {
+    font-weight: 500;
+    color: #265a78;
+    margin-right: 45px;
+    cursor: pointer;
+    padding-bottom: 13px;
+  }
+  .active {
+    color: #ffffff;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 5px;
+      bottom: -3px;
+      background: #fe47f8;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "AlibabaPuHuiTi-Medium";
+  src: url("./AlibabaPuHuiTi-2-65-Medium.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Premiumblack";
+  src: url("./Premiumblack.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+/* @font-face {
+  font-family: "SourceHanSansCN";
+  src: url("./SourceHanSansCN-Normal.otf");
+  font-weight: normal;
+  font-style: normal;
+} */
+
+
+* {
+  font-family: "AlibabaPuHuiTi-Medium";
+}
+
+/* @font-face {
+  font-family: 'AlibabaPuHuiTi-Regular'; 
+  src: url('AlibabaPuHuiTi-2-55-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HarmonyOS'; 
+  src: url('HarmonyOS_Sans_SC_Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+} */

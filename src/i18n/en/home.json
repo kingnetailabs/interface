@@ -1,0 +1,96 @@
+{
+  "TopBanner": {
+    "1": "3D VIRTUAL HUMAN ECOSYSTEM BASED ON AI-AGENT",
+    "2": "Kingnet is an innovative platform that combines AI-Agent and Web3 technology, focusing on providing lightweight and intelligent 3D virtual human solutions for users in the Web3 community. Users can create and customize virtual humans, allowing them to deliver services in an intuitive manner, enhancing the efficiency and experience of digital interactions.",
+    "3": "Start Experience"
+  },
+  "CreateAi": {
+    "1": "Create your virtual person",
+    "2": "Kingnet Virtual Person",
+    "3": "Integrating the characteristics of AI, 3D virtual humans, and Web3 to create a virtual social and creative platform centered around KINGNET culture. Our core philosophy is “Everyone can create their own virtual human and interact with it, making virtual humans a unique digital asset and identity symbol.”",
+    "4": "Click to experience"
+  },
+  "MemeAi": {
+    "1": "Kingnet Virtual Human Core Functions",
+    "2": "3D Virtual Human Creation",
+    "3": "Support users in creating 3D virtual characters autonomously, and allow users to adjust the virtual character’s status according to their needs, such as switching outfits, modifying voice styles, and even setting specific behaviors.",
+    "4": "AI-Agent Driven Intelligent Services",
+    "5": "3D virtual humans based on AI-Agent technology provide a humanoid interactive experience with diverse functionalities, such as intelligent Q&A for specific roles, interactive companionship, and professional agency tasks.",
+    "6": "Check"
+  },
+  "Product": {
+    "1": "Product Application Scenarios",
+    "2": "Virtual Image Display",
+    "3": "Users can showcase their personalized image in the community through virtual avatars, such as pairing them with unique outfits to express their personal style.",
+    "4": "Personalized Interaction",
+    "5": "Users can interact naturally with virtual beings, such as consulting on everyday questions or obtaining advice, experiencing intelligent companionship and personalized agent services.",
+    "6": "Digital Companionship Experience",
+    "7": "Virtual humans, as digital companions for users, can provide emotional support and limited communication assistance, enhancing the digital life experience for users.",
+    "8": "Start Experience"
+  },
+  "AiShow": {
+    "1": "Virtual Human Action Demonstration and Interactive Experience",
+    "2": "Start Experience"
+  },
+  "Creativity": {
+    "1": "Technical Highlights",
+    "2": "Lightweight 3D Modeling and Rendering",
+    "3": "Achieve real-time rendering through efficient Unity engine and GPU acceleration technology, ensuring the smoothness of interaction between virtual humans and users.",
+    "4": "AI-Agent Intelligent Drive",
+    "5": "Combining adaptive reinforcement learning models with natural language processing technology to provide users with a highly intelligent and personalized service experience.",
+    "6": "Modular Design and Security",
+    "7": "Based on a modular design, ensure that the system functions are easy to expand while protecting user data through security mechanisms."
+  },
+  "TokenLolz": {
+    "1": "Token Mechanism and LOLZ Tokens",
+    "2": "Token Mechanism",
+    "3": "·$LOLZ Tokens: Users earn rewards for creating memes and participating in interactions; used to purchase virtual human upgrade items, participate in competitions, etc.",
+    "4": "·NFT Assets: Each virtual human or its derived motion emoji is an NFT traceable on the blockchain, allowing for free trading.",
+    "5": "AI-Agent Technology Support",
+    "6": "·Adaptive Generation: AI continuously learns popular meme trends in the community to recommend creativity to users.",
+    "7": "·Virtual Human Generation: Integrates generative AI (text-to-3D model) and dynamic motion capture technology for natural expression.",
+    "8": "Web3 Expansion",
+    "9": "·Open Cross-Platform Use: Virtual meme characters can be imported into virtual worlds, games, or social media.",
+    "10": "·Composable NFTs: Virtual meme characters can be combined with other Web3 projects (such as virtual fashion, music NFTs) to enhance interactivity.",
+    "11": "Enter Marketplace"
+  },
+  "Roadmap": {
+    "1": "Meme Verse 3.0 Project Roadmap ",
+    "2": "Phase 1:<br/> Initiation and Outreach ",
+    "3": "$LOLZ Token Fair Launch: ",
+    "4": "Distribute tokens on Pump.fun to create a community foundation.",
+    "5": "Virtual Human Tools: ",
+    "6": "Enables users to create virtual people with basic customization and interaction features.",
+    "7": "Community Activities: ",
+    "8": "Organize early entry contests, such as\" Most Creative Virtual Person \"and offer a $LOLZ prize.",
+    "9": "Marketing Activities: ",
+    "10": "Target Web3 users and meme enthusiasts through social channels like Twitter and Telegram.",
+    "11": "Phase 2:<br/>  Functionality expansion and growth ",
+    "12": "Enhanced interactivity: ",
+    "13": "Introduces dynamic expressions and task execution for virtual people.",
+    "14": "Meme PK module: ",
+    "15": "Allows users to co-create and compete for dynamic memes.",
+    "16": "Token Ecosystem: ",
+    "17": "Launch behavior-based rewards for activities such as content creation and engagement.",
+    "18": "Governance Framework: ",
+    "19": "Deploy on-chain governance tools for community proposals and votes.",
+    "20": "Phase 3:<br/>  Ecosystem Expansion ",
+    "21": "Virtual Person live: ",
+    "22": "Enable live streaming and cross-community interaction.",
+    "23": "Application Scenario: ",
+    "24": "Expanding virtual human use cases in education and services.",
+    "25": "Monetization: ",
+    "26": "Introduction of customization and subscription services for virtual content.",
+    "27": "Partner: ",
+    "28": "Partnering with other Pump.fun projects and Web3 platforms to grow the ecosystem.",
+    "29": "Stage 4:<br/>  Cultural Impact ",
+    "30": "MemeVerse application: ",
+    "31": "Launch a dedicated application that integrates all features, including interaction, community, and token management.",
+    "32": "Global Meme Creator Competition: ",
+    "33": "Attract international creators to increase platform awareness.",
+    "34": "Virtual Human IP Development: ",
+    "35": "Explore partnerships to commercialize avatars.",
+    "36": "Governance maturity: ",
+    "37": "Fully decentralized platform development driven by token holders."
+  }
+}

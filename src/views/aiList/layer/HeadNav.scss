@@ -1,0 +1,81 @@
+.generate-main-container {
+  display: flex;
+  align-items: flex-start;
+  .ant-spin-nested-loading {
+    width: 100%;
+  }
+  .ant-spin-container {
+    display: flex;
+    align-items: flex-start;
+  }
+  .list-options {
+    width: 350px;
+    .submit-btn {
+      text-align: center;
+      margin: 40px auto;
+      button {
+        height: 45px;
+      }
+    }
+  }
+  .ant-spin {
+    color: #fe47f8;
+    .ant-spin-dot-item {
+      color: #fe47f8;
+    }
+  }
+}
+
+.main-container {
+  .back {
+    display: flex;
+  }
+  .faq-button {
+    margin-left: 15px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ffe53b;
+    background-image: linear-gradient(147deg, #0066ff 0%, #fe47f8 74%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.151);
+    position: relative;
+    svg {
+      height: 0.7em;
+      fill: rgb(0, 0, 0);
+    }
+    &:hover {
+      svg {
+        animation: jello-vertical 0.7s both;
+      }
+    }
+  }
+
+  @keyframes jello-vertical {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+    30% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+    40% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+    50% {
+      transform: scale3d(0.85, 1.15, 1);
+    }
+    65% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+    75% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+}

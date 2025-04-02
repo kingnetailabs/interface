@@ -1,0 +1,123 @@
+@use "@/vars" as *;
+
+.title-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 0;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 50px;
+  color: #ffffff;
+  line-height: 45px;
+  text-shadow: 1px 1px 3px #fe47f8, 1px 1px 1px #fe47f8;
+  margin: 0 40px;
+  font-family: Premiumblack; /* 注意确保 Premiumblack 字体已经在项目中 */
+  text-align: center;
+}
+
+.border {
+  width: 417px;
+  height: 4px;
+  position: relative;
+  &:first-child {
+    background: linear-gradient(
+      270deg,
+      rgba(48, 239, 223, 0.8) 0%,
+      rgba(48, 239, 223, 0) 100%
+    );
+    &::before {
+      position: absolute;
+      content: "";
+      width: 14px;
+      height: 14px;
+      background: #30efdf;
+      border-radius: 1px;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%) rotate(45deg);
+    }
+  }
+  &:last-child {
+    background: linear-gradient(
+      90deg,
+      rgba(48, 239, 223, 0.8) 0%,
+      rgba(48, 239, 223, 0) 100%
+    );
+    &::before {
+      position: absolute;
+      content: "";
+      width: 14px;
+      height: 14px;
+      background: #30efdf;
+      border-radius: 1px;
+      // margin-right: 25px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%) rotate(45deg);
+    }
+  }
+}
+
+.border-left {
+  background: linear-gradient(
+    270deg,
+    rgba(48, 239, 223, 0.8) 0%,
+    rgba(48, 239, 223, 0) 100%
+  );
+}
+
+.border-left::before {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: #30efdf;
+  border-radius: 1px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.border-right {
+  background: linear-gradient(
+    90deg,
+    rgba(48, 239, 223, 0.8) 0%,
+    rgba(48, 239, 223, 0) 100%
+  );
+}
+
+.border-right::before {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: #30efdf;
+  border-radius: 1px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: $mobile-width) {
+  .title-wrap {
+    padding: 20px 0;
+  }
+
+  .title {
+    font-size: 35px;
+  }
+
+  .border {
+    width: 100%;
+  }
+
+  .border-left::before,
+  .border-right::before {
+    width: 12px;
+    height: 12px;
+  }
+}

@@ -1,0 +1,557 @@
+$w-80: 80%;
+
+.home_page_title {
+  margin: 40px auto;
+  padding-top: 40px;
+  border-top: 1px solid #2e2e2e;
+  width: $w-80;
+  span {
+    font-size: 35px;
+    font-weight: bolder;
+    // font-family: Impact, Impact;
+    line-height: 1;
+  }
+}
+.h1 {
+  font-size: 26px;
+  font-weight: bolder;
+}
+
+.TopBanner {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .myVideo,
+  .myVideoBg {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .myVideoBg {
+    background-color: rgba($color: #000000, $alpha: 0.4);
+  }
+  .info {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .logo {
+    width: 20%;
+    margin-bottom: 40px;
+  }
+  .title {
+    font-size: 50px;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: bolder;
+    line-height: 1;
+    // font-family: Impact, Impact;
+  }
+  .desc {
+    line-height: 20px;
+    text-align: center;
+    width: 65%;
+    color: #fff;
+  }
+  .btn {
+    width: 240px;
+    line-height: 60px;
+    background: linear-gradient(139deg, #0661dc 0%, #d031d1 100%);
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 21px;
+    margin: 5% auto 0;
+    cursor: pointer;
+  }
+}
+
+.TokenLolz {
+  margin-bottom: 60px;
+  .descBox {
+    width: $w-80;
+    margin: auto;
+    border-radius: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+      90deg,
+      rgb(#0b0520, 0.5) 0%,
+      rgb(#00206a, 0.8) 30%,
+      rgb(#00206a, 0.8) 60%,
+      rgb(#7c0081, 0.8) 100%
+    );
+
+    position: relative;
+    .bg {
+      position: absolute;
+      right: -60px;
+      top: -30px;
+    }
+  }
+  .l {
+    padding: 60px 40px;
+    flex: 1;
+    .item {
+      margin-bottom: 30px;
+      .h1 {
+        margin-bottom: 5px;
+      }
+      .desc {
+        line-height: 20px;
+        color: #c4c4c4;
+      }
+    }
+    .btn {
+      width: 240px;
+      line-height: 60px;
+      background: linear-gradient(139deg, #0661dc 0%, #d031d1 100%);
+      border-radius: 10px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 21px;
+      margin-top: 80px;
+      cursor: pointer;
+    }
+  }
+  .r {
+    .tokenImg {
+      width: 90%;
+    }
+  }
+}
+
+.MemeAi {
+  .descBox {
+    width: $w-80;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    > div {
+      position: relative;
+      flex: 1;
+      min-width: 320px;
+      display: flex;
+      border-radius: 30px;
+    }
+    .box1 {
+      // background-image: url("@/assets/home/MemeAi-bg1.png") ;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 110% 110%;
+      .bg {
+        max-width: 30%;
+        max-height: 80%;
+        right: 5%;
+        bottom: 0;
+        top: 0;
+        margin: auto;
+      }
+    }
+    .box2 {
+      // background-image: url("@/assets/home/MemeAi-bg2.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 110% 110%;
+      .bg {
+        max-width: 50%;
+        max-height: 100%;
+        right: 5%;
+        bottom: 0;
+        top: 0;
+        margin: auto;
+      }
+    }
+    .bg {
+      position: absolute;
+    }
+    .info {
+      padding: 5%;
+    }
+    .h1 {
+      margin-bottom: 15px;
+      line-height: 1;
+    }
+    .desc {
+      line-height: 20px;
+      color: #c4c4c4;
+      width: 50%;
+    }
+    .btn {
+      width: 150px;
+      line-height: 44px;
+      border-radius: 10px;
+      background: linear-gradient(139deg, #0661dc 0%, #d031d1 100%);
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  }
+}
+
+.CreateAi {
+  .descBox {
+    width: $w-80;
+    margin: auto;
+    position: relative;
+    display: flex;
+    .bg {
+      width: 40%;
+      position: absolute;
+      right: 12%;
+      bottom: 0%;
+    }
+    .info {
+      padding: 5%;
+      border-radius: 30px;
+      background: linear-gradient(92deg, #a903c1 0%, #c20caf 52%, #ff2770 100%);
+    }
+    .h1 {
+      margin-bottom: 15px;
+      line-height: 1;
+    }
+    .desc {
+      line-height: 20px;
+      width: 45%;
+      color: #c4c4c4;
+    }
+    .btn {
+      width: 280px;
+      line-height: 50px;
+      border-radius: 10px;
+      background: linear-gradient(139deg, #0661dc 0%, #0661dc 100%);
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+      margin-top: 60px;
+      cursor: pointer;
+    }
+  }
+  .list {
+    margin-top: 60px;
+  }
+}
+
+.Creativity {
+  .descBox {
+    width: $w-80;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    > div {
+      position: relative;
+      flex: 1;
+      min-width: 320px;
+    }
+    .bg {
+      width: 100%;
+    }
+    .info {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 24vh;
+      padding-bottom: 20px;
+    }
+    .h1 {
+      text-align: center;
+      width: 80%;
+      margin: 0 auto 10px;
+      line-height: 1;
+      height: 78px;
+    }
+    .desc {
+      line-height: 20px;
+      color: #c4c4c4;
+      width: 80%;
+      margin: auto;
+    }
+  }
+}
+
+.Product {
+  .descBox {
+    width: $w-80;
+    margin: 80px auto 0;
+    position: relative;
+    // background-image: url("@/assets/home/Product-bg1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 30px;
+    height: 70vh;
+    background: linear-gradient(90deg, #7b0081 0%, #2a1564 100%);
+    display: flex;
+    justify-content: flex-end;
+    .bg {
+      width: 40%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 5%;
+      margin: auto;
+    }
+
+    .info {
+      width: 50%;
+      padding: 5% 3%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      z-index: 1;
+    }
+    .item {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      .index {
+        margin-top: 10px;
+      }
+    }
+    .h1 {
+      margin: 20px 0;
+      line-height: 1;
+    }
+    .desc {
+      line-height: 20px;
+      width: 100%;
+      color: #c4c4c4;
+    }
+    .btn {
+      max-width: 280px;
+      line-height: 50px;
+      border-radius: 10px;
+      background: linear-gradient(139deg, #0661dc 0%, #d031d1 100%);
+
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+      margin-top: 40px;
+      cursor: pointer;
+    }
+  }
+}
+
+.partner {
+  margin-bottom: 40px;
+
+  .list {
+    padding: 20px 0;
+    background-color: #000;
+    background: linear-gradient(
+      180deg,
+      rgb(#7c0081, 0.2) 0%,
+      rgb(#231a95, 0.2) 100%
+    );
+  }
+}
+
+.Roadmap {
+  .listBox {
+    width: $w-80;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    .list {
+      flex: 1;
+      background: linear-gradient(180deg, #7d008181 0%, #221a9579 100%);
+      border-radius: 30px;
+      padding: 40px 30px;
+      .title {
+        font-size: 26px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      .item {
+        margin-bottom: 10px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      .h1 {
+        font-weight: 400;
+      }
+      .desc {
+        line-height: 20px;
+        color: #c4c4c4;
+      }
+    }
+  }
+}
+
+.AiShow {
+  .info {
+    width: $w-80;
+    margin: auto;
+    display: flex;
+    gap: 40px;
+  }
+  .l {
+    max-width: 500px;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  .fgx {
+    width: 1px;
+    background-color: #343e3c;
+  }
+  .r {
+    height: auto;
+    background: #261994;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    .img {
+      height: 80%;
+      border-radius: 30px;
+      overflow: hidden;
+    }
+    .btnBox {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .btn {
+      width: 240px;
+      line-height: 60px;
+      background: #0661dc;
+      border-radius: 10px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 21px;
+      margin: 20px auto 3%;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .CreateAi {
+    .descBox {
+      background: linear-gradient(92deg, #a903c1 0%, #c20caf 52%, #ff2770 100%);
+      border-radius: 30px;
+      flex-wrap: wrap;
+      .info {
+        padding: 15% 6%;
+      }
+      .desc {
+        width: 100%;
+      }
+      .bg {
+        width: 80%;
+        margin: auto;
+        position: initial;
+      }
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+  .Product {
+    .descBox {
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+      height: auto;
+      .info {
+        width: 100%;
+        padding: 15% 6%;
+      }
+      .bg {
+        width: 100%;
+        position: initial;
+      }
+    }
+  }
+  .MemeAi {
+    .descBox {
+      .box1,
+      .box2 {
+        flex-wrap: wrap;
+        min-width: 100%;
+        background-size: 110% 110%;
+      }
+      .info {
+        padding: 15% 6%;
+      }
+      .desc {
+        width: 100%;
+      }
+      .bg {
+        width: 80%;
+        margin: auto;
+        position: initial;
+      }
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+
+  .Creativity {
+    .descBox {
+      > div {
+        flex: 0 0 100%;
+        min-width: initial;
+      }
+      .info {
+        height: auto;
+      }
+      .h1 {
+        width: 90%;
+        height: auto;
+      }
+      .desc {
+        width: 90%;
+        height: auto;
+      }
+    }
+  }
+  .TopBanner {
+    .logo {
+      width: 60%;
+      margin: 40px auto;
+    }
+  }
+  .AiShow {
+    .info {
+      flex-wrap: wrap;
+    }
+    .l {
+      width: 100%;
+      max-width: initial;
+      margin: auto;
+    }
+    .fgx {
+      display: none;
+    }
+  }
+}

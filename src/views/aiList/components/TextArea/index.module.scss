@@ -1,0 +1,58 @@
+.base-input {
+  max-width: 350px;
+  .title {
+    margin: 20px auto 15px;
+  }
+  .input-box {
+    background-color: #17171d;
+    border: 1px solid #2e2f38;
+    border-radius: 10px;
+    padding: 15px 20px;
+    .subheading {
+      margin-bottom: 10px;
+    }
+  }
+  .tips {
+    font-size: 12px;
+    color: #dc4446;
+    margin-bottom: 15px;
+  }
+  .required {
+    color: #dc4446;
+    margin-right: 5px;
+  }
+  .example {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    gap: 5px;
+    .item {
+      padding: 5px;
+      margin-bottom: 5px;
+      border-radius: 5px;
+      border: 1px solid #2e2f38;
+      cursor: pointer;
+      &.active {
+        background-color: aqua;
+        color: #000000;
+      }
+    }
+  }
+
+  .list-item {
+    display: flex;
+    flex-wrap: wrap;
+    .item {
+      margin-bottom: 15px;
+      margin-right: 10%;
+      flex: 0 0 45%;
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+
+    .subheading {
+      margin: 0 0 5px 5px;
+    }
+  }
+}

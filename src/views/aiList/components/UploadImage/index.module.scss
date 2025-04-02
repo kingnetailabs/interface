@@ -1,0 +1,45 @@
+.base-upload {
+  max-width: 350px;
+  .title {
+    margin: 20px auto 15px;
+  }
+  .required {
+    color: #dc4446;
+    margin-right: 5px;
+  }
+  .main-box {
+    background-color: #17171d;
+    border: 1px solid #2e2f38;
+    border-radius: 10px;
+    padding: 15px 20px;
+  }
+  .subheading {
+    margin-bottom: 10px;
+  }
+  .select-box {
+    margin-bottom: 20px;
+  }
+  .ant-upload-drag-icon {
+    color: #fff;
+  }
+  .upload-box-img {
+    position: relative;
+    text-align: center;
+    &:hover {
+      .preview {
+        display: flex;
+      }
+    }
+    .preview {
+      display: none;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      background-color: rgba($color: #000000, $alpha: 0.5);
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

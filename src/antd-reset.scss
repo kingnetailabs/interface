@@ -1,0 +1,72 @@
+@import '@/vars';
+
+.gameTable {
+
+  :global(.ant-table) {
+    border: 2px solid $game-border-color;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  :global(.ant-table-thead tr th) {
+    background-color: $game-bg-color;
+    font-weight: 500;
+    font-size: $game-font-size;
+    color: #A2A2A4;
+  }
+
+  :global(.ant-table-tbody) {
+    background-color: $game-bg-color;
+  }
+
+  :global(.ant-table-cell) {
+    border-bottom: 2px solid $game-border-color !important;
+  }
+
+  :global(.ant-table-cell::before) {
+    display: none;
+  }
+
+  :global(.ant-table-tbody tr td) {
+    font-weight: 500;
+    font-size: $game-font-size;
+    color: #DDDDE0;
+  }
+
+  :global(.ant-table-tbody tr:last-child td) {
+    border-bottom: none !important;
+  }
+
+  :global(.ant-table-tbody .ant-table-placeholder) {
+    background-color: $game-bg-color !important;
+  }
+}
+
+.gametab {
+  :global(.ant-tabs-tab) {
+    font-size: $game-font-size;
+    // color: #9B9A9D;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  :global(.ant-tabs-nav::before) {
+    display: none;
+  }
+  :global(.ant-tabs-content-holder) {
+    overflow: auto;
+  }
+}
+
+.gameForm {
+  :global(.ant-form-item-label > label) {
+    font-size: $game-font-size;
+  }
+}
+
+.gameSpin {
+  :global(.ant-spin-text) {
+    color: #2FF3E3 !important;
+  }
+  :global(.ant-spin-dot) {
+    color: #2FF3E3 !important;
+  }
+}

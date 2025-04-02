@@ -1,0 +1,41 @@
+@import '@/vars';
+
+.solid-wrap {
+    width: 100% !important;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 10px;
+  }
+  
+  .border {
+    flex-grow: 1;
+    height: 3px;
+    background: #675066;
+  }
+  
+  .center {
+    height: 25px;
+    margin: 0 10px;
+    display: flex;
+  }
+  
+  .center img {
+    width: 100%;
+    height: 100%;
+    vertical-align: baseline;
+  }
+  
+  /* 媒体查询 */
+  @media screen and (max-width: $mobile-width) { /* 替换为你实际的移动设备宽度 */
+    .center {
+      width: 22px;
+      height: 15px;
+    }
+    .border {
+      width: 45%;
+    }
+  }
+  

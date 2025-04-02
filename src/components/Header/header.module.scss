@@ -1,0 +1,138 @@
+@use "@/vars" as *;
+
+.header {
+  height: 52px;
+  background: #2a2e34;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+
+  :global {
+    .wrap {
+      width: $container-pc-w;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .logo {
+        max-width: 110px;
+        cursor: pointer;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .right {
+        display: flex;
+        align-items: center;
+
+        .nav {
+          margin-right: 60px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          gap: 60px;
+
+          span,
+          a {
+            font-family: Impact, Impact;
+            line-height: 1;
+            font-weight: 400;
+            font-size: 20px;
+            color: #ffffff;
+            cursor: pointer;
+            position: relative;
+
+            &::after {
+              position: absolute;
+              content: "";
+              width: 0%;
+              height: 2px;
+              left: 0;
+              bottom: 0;
+              background: #fe47f8;
+              transition-duration: 0.3s;
+              transform-origin: left;
+            }
+            &:hover {
+              color: #fe47f8;
+              text-shadow: 1px 1px 10px #fe47f8;
+              &::after {
+                width: 100%;
+              }
+            }
+          }
+          .active {
+            color: #fe47f8;
+            text-shadow: 1px 1px 10px #fe47f8;
+          }
+        }
+
+        .login {
+          cursor: pointer;
+
+          height: 32px;
+          font-weight: 400;
+          font-size: 16px;
+          color: #fe47f8;
+          border-radius: 5px;
+          border: 1px solid #fe47f8;
+          padding: 6px 15px;
+          // background-color: #0661dc;
+
+          div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .lang {
+          cursor: pointer;
+          margin-left: 20px;
+          width: 30px;
+          height: 30px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .classify {
+          display: none;
+          width: 35px;
+          margin-left: 12px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .header {
+    :global {
+      .wrap {
+        .right {
+          .nav {
+            gap: 5px;
+            margin-right: 5px;
+          }
+          .login {
+            font-size: 12px;
+            line-height: 1;
+            padding: 6px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

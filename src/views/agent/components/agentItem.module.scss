@@ -1,0 +1,173 @@
+@use "@/vars" as *;
+
+@keyframes breathe {
+  0% {
+    border: 1px solid rgba(254,71,248, 0.9);
+    box-shadow: 0 0 10px rgba(254,71,248, 0.9);
+  }
+  5% {
+    border: 1px solid rgba(254,71,248, 0.85);
+    box-shadow: 0 0 10px rgba(254,71,248, 0.85);
+  }
+  10% {
+    border: 1px solid rgba(254,71,248, 0.8);
+    box-shadow: 0 0 10px rgba(254,71,248, 0.8);
+  }
+  15% {
+    border: 1px solid rgba(254,71,248, 0.75);
+    box-shadow: 0 0 10px rgba(254,71,248, 0.75);
+  }
+  20% {
+    border: 1px solid rgba(254,71,248, 0.7);
+    box-shadow: 0 0 10px rgba(254,71,248, 0.7);
+  }
+  25% {
+    border: 1px solid rgba(254,71,248, 0.65);
+    box-shadow: 0 0 10px rgba(254,71,248, 0.65);
+  }
+  30% {
+    border: 1px solid rgba(254,71,248, 0.63);
+    box-shadow: 0 0 10px rgba(254,71,248, 0.63);
+  }
+  35% {
+    border: 1px solid rgba(254,71,248, 0.6);
+    box-shadow: 0 0 10px rgba(254,71,248, 0.6);
+  }
+  40% {
+    border: 1px solid rgba(254,71,248, 0.5);
+    box-shadow: 0 0 10px rgba(254,71,248, 0.5);
+  }
+  45% {
+    border: 1px solid rgba(254,71,248, 0.4);
+    box-shadow: 0 0 10px rgba(254,71,248, 0.4);
+  }
+  50% {
+    border: 1px solid rgba(254,71,248, 0.3);
+    box-shadow: 0 0 10px rgba(254,71,248, 0.3);
+  }
+  55% {
+    border: 1px solid rgba(254,71,248, 0.2);
+    box-shadow: 0 0 10px rgba(254,71,248, 0.2);
+  }
+  60% {
+    border: 1px solid rgba(254,71,248, 0.1);
+    box-shadow: 0 0 10px rgba(254,71,248, 0.1);
+  }
+  65% {
+    border: 1px solid rgba(254,71,248, 0.2);
+    box-shadow: 0 0 10px rgba(254,71,248, 0.2);
+  }
+  70% {
+    border: 1px solid rgba(254,71,248, 0.3);
+    box-shadow: 0 0 10px rgba(254,71,248, 0.3);
+  }
+  75% {
+    border: 1px solid rgba(254,71,248, 0.4);
+    box-shadow: 0 0 10px rgba(254,71,248, 0.4);
+  }
+  80% {
+    border: 1px solid rgba(254,71,248, 0.5);
+    box-shadow: 0 0 10px rgba(254,71,248, 0.5);
+  }
+  85% {
+    border: 1px solid rgba(254,71,248, 0.6);
+    box-shadow: 0 0 10px rgba(254,71,248, 0.6);
+  }
+  90% {
+    border: 1px solid rgba(254,71,248, 0.7);
+    box-shadow: 0 0 10px rgba(254,71,248, 0.7);
+  }
+  95% {
+    border: 1px solid rgba(254,71,248, 0.8);
+    box-shadow: 0 0 10px rgba(254,71,248, 0.8);
+  }
+  100% {
+    border: 1px solid rgba(254,71,248, 0.85);
+    box-shadow: 0 0 10px rgba(254,71,248, 0.85);
+  }
+}
+
+.agent-item {
+  background: rgb(31, 30, 30);
+  border-radius: 5px;
+  margin-bottom: 21px;
+  padding-bottom: 5px;
+  cursor: pointer;
+  animation: breathe 4s infinite;
+  border: 1px solid rgba(247, 43, 240, 0.9);
+  box-shadow: 0 0 10px rgba(254,71,248, 0.9); // animation: breathe 4s ease-in-out infinite;
+
+  :global {
+    .img {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 5px;
+      height: 20vh;
+    }
+
+    .img2 {
+      height: 12vh;
+      transition: transform 0.3s ease; /* 添加过渡效果 */
+    }
+
+    .agent-body {
+      // animation: breathe 4s infinite;
+      padding: 5px;
+      .title-box {
+        display: flex;
+        align-items: center;
+        height: 22px;
+        line-height: 22px;
+        .title {
+          flex: 5;
+          font-size: 16px;
+          white-space: nowrap; /* 确保文本在一行内显示，不换行 */
+          overflow: hidden; /* 隐藏超出容器的部分 */
+          text-overflow: ellipsis; /* 显示省略号来表示被隐藏的文本 */
+        }
+        .shuijin {
+          flex: 1;
+          display: flex;
+          align-items: right;
+          color: rgb(164, 167, 163);
+          height: 16px;
+          line-height: 16px;
+          .text {
+            font-size: 16px;
+          }
+          .shard-icon {
+            width: 16px;
+            height: 16px;
+          }
+        }
+      }
+
+      .desc {
+        height: 3em;
+        width: 100%;
+        font-size: 12px;
+        margin-top: 3px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        color: #c9c4c4;
+      }
+    }
+
+    .agent-footer {
+      height: 20px;
+      font-size: 11px;
+      text-align: right;
+      padding: 5px;
+      color: rgb(159, 163, 158);
+    }
+  }
+
+  .agent-item:hover {
+    // transform: scale(1.1); /* 悬浮时放大1.1倍 */
+  }
+
+  @media screen and (max-width: $mobile-width) {
+  }
+}
